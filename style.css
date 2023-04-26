@@ -1,0 +1,177 @@
+html {
+  font-family: "Quicksand", sans-serif;
+  background-color: antiquewhite;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0 1.5rem 0 1rem;
+  line-height: 3rem;
+}
+
+li {
+  white-space: nowrap;
+}
+
+i {
+  margin-right: 1rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+  
+}
+
+header {
+  margin-bottom: 1rem;
+  display: flex;
+  height: 4.5rem;
+  justify-content: space-between;
+}
+
+
+
+#vegburger,#cart-icon {
+  margin: 1rem 0 0 2.5rem;
+  color: black;
+  background-color: gold;
+  font-size: 1.5rem;
+  z-index: 2;
+  border: 0.5rem;
+  border-radius: 50%;
+  padding:0.8rem 0.8rem 0.8rem 1rem;
+  width: 1.3rem;
+}
+
+#cart-icon{
+  margin: 1rem 2.5rem 0 0;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: black;
+    color: white;
+    transform: translateX(-10rem);
+    padding-top: 3.8rem;
+    transition: transform 350ms ease-in-out;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-active{
+    transform: translateX(0);
+}
+
+#cart-content{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 60%;
+  background-color: black;
+  color: white;
+  width: 70%;
+  font-size: 12px;
+  padding-top: 3.8rem 1rem ;
+  transform: translateY(-140vh);
+  transition: transform 350ms ease-in-out;
+}
+
+#cart-content.active{
+  transform: translateY(0);
+}
+
+#cart-content li:last-child{
+  font-weight: bold;
+  font-size: 150%;
+}
+
+main h1{
+    margin: 0 1rem;
+    text-align: center;
+
+}
+
+#products{
+  margin: 50px;
+  text-align: center;
+}
+
+#products h2{
+    background-color:gold;
+    color: black;
+    padding: .3rem 1rem;
+    border-bottom: .3rem solid white;
+}
+
+#products p{
+    font-variant: small-caps;
+    font-size: 1.5rem;
+}
+
+.chev-logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+#products a{
+    background-color: black;
+    padding: .3rem 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+#products a:hover {
+  text-transform: uppercase;
+  color: yellow;
+  cursor: pointer;
+}
+
+#products img {
+  width: 75%;
+}
+
+footer{
+  text-align: center;
+}
+
+
+@media screen and (min-width: 650px){
+  #products{
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+
+
+  #products img{
+    width: 400px;
+    height: 300px;
+  }
+
+  #products div{
+    margin: 20px;
+    width: 30%;
+  }
+
+  main h1{
+    font-size: 60px;
+    margin-bottom: 30px;
+  }
+
+
+  
+}
